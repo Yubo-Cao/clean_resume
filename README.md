@@ -1,0 +1,1 @@
+A LaTeX-based resume generator from JSON resume.
