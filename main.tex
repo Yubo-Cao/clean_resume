@@ -1,4 +1,4 @@
-\documentclass[sidebar-width=2.25in, primary=slate]{clean-resume}
+\documentclass[sidebar-width=2in, primary=slate, linespace=1.2]{clean-resume}
 
 \begin{document}
   \begin{sidebar}
@@ -16,13 +16,13 @@
     {
       email={Yubo\_Cao@outlook.com},
       phone=4708549826,
-      address={Lawrenceville, GA, 30043},
-      website={yubo-cao.github.io}
+      address={Lawrenceville, GA, 30043}
+      % website={yubo-cao.github.io}
     }
     
     \header{Career Objective}
     
-    I am passionate about computer science and eager to take my skills in Python, Web, and AI to the next level by studying at GHP. With my proven academic record and enthusiasm for learning, I am eager to immerse myself in GHP's rigorous coursework, collaborate with professors and peers, and reach my full potential in the field.
+    Passionate about computer science and biomedical research, I am eager to deepen my understanding of biology and CS through collegiate-level study. From bridging communication barriers to advancing the knowledge frontier, technology has transformed my life, and I hope to do the same for others.
   \end{sidebar}%
   \sep%
   \begin{main}
@@ -32,8 +32,8 @@
     {
       school = {The Gwinnett School of Math, Science and Technology},
       graduation = {\date{2025/5}},
-      gpa = 4.16,
-      nga = 99.72
+      gpa = 4.391,
+      nga = 101.469
     }
   
     \begin{lst}
@@ -42,11 +42,11 @@
         columns = 2,
     	]
       \item AP Computer Science Principles (5/5)
-      \item AP Calculus BC (100/100)
-      \item Engineering Application (97/100)
-      \item Physics \& Engineering (99/100)
-      \item Robotics (98/100)
-      \item AP Biology (97/100)
+      \item AP Computer Science A (5/5)
+      \item AP Research (5/5)
+      \item AP Calculus BC (5/5)
+      \item AP Biology (5/5)
+      \item GT Linear Alg. \& Multi. Calculus (A)
     \end{lst}
     
     \begin{lst}
@@ -54,90 +54,149 @@
         title = Honors,
         oneline = true,
       ]
-      Tri-M Music Honor Society \& National Honor Society
+       Mu Alpha Theta \& National Honor Society \& Tri-M Music Society
     \end{lst}
     
     \begin{lst}
       [
         title = Clubs,
-        columns = 2,
-  	]
+        columns = 3,
+      ]
       \item Computer Science Club
-      \item Technology Student Association
-      \item Robotics Club
+      \item Tech Student Assoc.
       \item HackGwinnett
+      \item Robotics Club
     \end{lst}
     
     \header{Experience}
     
     \begin{experience}
       {
-        duration = { \range{2023/1} },
-        organization = { HackGwinnett },
-        title = { Officer }
-      }
-      \item Led bi-weekly workshops, \eg, web scraping and machine learning
-      \item Asisted HackGwinnett, a 16-hour hackathon with 100+ participants   throughout metro Atlanta
-    \end{experience}
-    
-    \begin{experience}
-      {
         duration = { \range{2022/9} },
-        title = { Vice president },
-        organization = { GSMST CS Club }
+        title = { President },
+        organization = { \href{https://gsmstcsclub.github.io/}{GSMST CS Club} }
       }
-      \item Created weekly seminars, \eg, machine learning and cybersecurity
-      \item Led CyberPatriot team Lambda and advanced into the national semifinals
-      \item Tutored members of the computer science club
+      \item Organized outreach events: computational biology speaker series, alum speaker series, and the trip to the CS Museum of America.
+      \item Fundraised more than \$1500 in the 2022--2023 school year.
+      \item Led my curriculum team to create annual syllabi and weekly seminars on cybersecurity, algorithms, and introductory programming.
       
+      % \item Led CyberPatriot team Lambda and advanced into the national semifinals
+      % \item Tutored members of the computer science club
       % \item Participated in competitive programming team, \eg, USACO,   CodeQuests, etc
       % \item Participated in PicoCTF and obtained more than 1000 points for the   team
     \end{experience}
-    
+
+     \begin{experience}
+      {
+        duration = { \range{2023/1} },
+        organization = { \href{https://hackgwinnett.github.io/}{HackGwinnett} },
+        title = { President }
+      }
+      \item Planned HackGwinnett, an annual free 8-hour hackathon attracting over 200 high schoolers from 24 high schools and 7 counties to solve real-world issues.
+      \item Led Hackfest, a CS outreach event, to local elementary schools with 80+ attendance.
+      \item Led my curriculum team to create weekly workshops on GenAI, neural network, \etc
+      
+      % \item Led bi-weekly workshops, \eg, web scraping and machine learning
+    \end{experience}
+
+    \begin{experience}
+        {
+            duration = { \range{2023/9} },
+            title = { Student Researcher },
+            organization = { Emory School of Medicine }
+        }
+        \item Inspired by President Biden's cancer moonshot program, I researched curing leukemia using CRISPR-Cas9, where I engineered a novel nanoparticle-delivered gene therapy against chronic myeloid leukemia.
+    \end{experience}
     
     \begin{experience}
+        {
+            duration = { \range{2023/6--2023/8}; \range{2024/6--2024/8} },
+            title = { AI/ML Engineer Intern },
+            organization = { Lockheed Martin }
+        }
+        \item Introduced MLOps practices; my work made into the standard reference
+        \item Developed NLP system for leadership development program, saving 56 hr/year
+        \item Rebuilt corporate-wide website, improved stability and saved 120 hr/year
+        \item Extracted technical capabilities from Jira data for \$20M business analysis
+        \item Integrated generative AI into Solumina, automating discrepancy reports
+    \end{experience}
+
+    \begin{experience}
+        {
+            duration = { \range{2023/9} },
+            title = { Department Head },
+            organization = { \href{https://gecos.org/}{Gwinnett Ecos} }
+        }
+        \item Led 20 students committee and planned Earth Day, Sweep the Hooch, and Tree planting events in over 5 counties.
+        \item Built organizational website from scratch with Next.js \& GitHub.
+    \end{experience}
+
+    \begin{experience}
+        {
+            duration = { \range{2023/12} },
+            organization = { Mu Alpha Theta },
+            title = { Secretary },
+        }
+        \item Planned over 1000 hours worth of volunteer opportunities: AP mock exam grading, peer tutoring, collaboration with non-profit. 
+    \end{experience}
+  \end{main}
+
+  \newpage
+
+  \header{Voluteering}
+
+    \begin{experience}
+      {
+        duration = { \range{2024/1} },
+        title = { Polaris Peer Leader },
+        organization = { GSMST }
+      }
+      \item Dedicated over 45 hours to mentoring freshmen during the immersive summer STEM program, facilitating their smooth transition to GSMST.
+      \item Guided study techniques, time management, and personal growth to support freshmen in their academic and personal development.
+    \end{experience}
+    
+      \begin{experience}
       {
         duration = { \range{2022/5} },
         title = { Tutor/Volunteer },
         organization = { Learn To Be }
       }
-      \item Tutored students about knowledge of CS, math, physics, and   ch\-em\-istry
+      \item Tutored underrepresented students about CS, math, physics, and chemistry
     \end{experience}
-    
-  %   \header{Additional Skills}
+  
+  % \header{Projects}
     
   %   \begin{lst}
-  %     \item Proficient in Microsoft Office Suite, Google Docs, and \LaTeX
-  %     \item Intermediate in Adobe Photoshop, Adobe Illustrator, and Figma
-  %     \item Proficient in Python. Intermediate in C++, Java, and HTML/CSS
-  %     % \item Fluent in Simplified Chinese (Native) and English
-  %     % \item Introductory fluency in Spanish
+  %     \item Chemistry language: a programming language for solving chemistry problems with LL parser, 
+  %     % \item Redo list: feature-rich todo-list with markdown, dependencies, and   tags
+  %     \item Website: personal website with portfolio, resume, and blog
+  %     % \item Quizlet Helper: Python library for Quizlet with an object-oriented   interface
+  %     % \item FTC: ML-powered autonomous driving and modularized design
+  %     \item Algorithms: solutions to various algorithmic problems, \eg, CodeQuest
+  %     % \item Jqboard: cross-platform Python library for rich-media clipboard   manipulation
+  %     % \item Grade dashboard: full-stack web app for grade book analysis
   %   \end{lst}
     
-    \header{Projects}
-    
-    \begin{lst}
-      \item Chemistry language: a programming language for solving chemistry   problems
-      % \item Redo list: feature-rich todo-list with markdown, dependencies, and   tags
-      \item Website: personal website with portfolio, resume, and blog
-      % \item Quizlet Helper: Python library for Quizlet with an object-oriented   interface
-      % \item FTC: ML-powered autonomous driving and modularized design
-      \item Algorithms: solutions to various algorithmic problems, \eg, CodeQuest
-      % \item Jqboard: cross-platform Python library for rich-media clipboard   manipulation
-      % \item Grade dashboard: full-stack web app for grade book analysis
-    \end{lst}
-    
     \header{Awards \& Honors}
-    
+
     \begin{lst}
-      \item CyberPatriot national semifinalist
-      \item USACO silver medalist
-      \item Governor's honors program (GHP) semi-finalist
-      \item GHP nomination in math, mechanical engineering, and CS
-      \item Academic achievement in mathematics (1 out of all freshmen)
-      \item Academic letter (Numeric grade average $\ge$ 95)
-      \item Academic excellence in AP Calculus, Spanish II, Chemistry, and   Accelerated Geometry and Pre-Calculus
-      \item All-state band
+        \item National: 8th in PicoCTF 22--23 (out of 1498 teams), top 5\% in PicoCTF 23--24
+        \item National: 1st in CyberPatriot 22--23 Silver Tier, Semifinals; top 5\% in CyberPatriot 23--24 Platinum tier, Semifinals
+        \item National: VEX Robotics World Championship 23--24, 675A
+        \item National: 3rd in Code Quest 22--23 competition
+        \item National: Coolidge Senator 24--25, top 100 among 4200 applicants
+        \item National: Harvard Science Research Conference (HSRC) 23--24, discussed research with Harvard professors
+        \item National: Beaver Works Summer Institute 23--24, studied data science's application in the biomedical field at MIT
+        \item National: USACO Silver Tier 22--24
+        \item State: 1st in Cyber Quest 23--24 competition
+        \item State: FTC Robotics Championship 22--23
+        \item State: GHP60 Finalist in Engineering---Computer Programming
+        \item State: Top 25 in the state, 22--23 all-state band
+        \item Regional: 2nd place (top 30\%) in the county science fair; 1st place in school, presenting research on nanoparticles in treating leukemia
+        \item School: GHP60 Nomination in Mathematics, Mechanical Design, and Computer Programming
+        \item School: 2× Spring Academic Achievement awards in mathematics (1 among entire grade); Academic Excellence awards in AP Calculus BC, Spanish II, Chemistry, and Accelerated Geometry \& Pre-Calculus
+        \item School: Academic letter (Numeric grade average $\ge$ 95)
+        \item School: AP Scholar with Distinction (scored 5 on more than 5 APs), AP Capstone Diploma (completed AP Seminar/Research)
     \end{lst}
-  \end{main}
+
 \end{document}

@@ -98,11 +98,14 @@
 \RequirePackage{xspace}
 
 % link
+\RequirePackage{xcolor}
 \RequirePackage[
-    unicode=true, 
-    bookmarks=false, 
+    unicode=true,
+    bookmarks=false,
     breaklinks=false, 
-    pdfborder={0~0~0}
+    linkbordercolor=red,
+    colorlinks=false,
+    pdfborderstyle={/S/U/W\ 1}
 ]{hyperref}
 
 % multicol
@@ -229,7 +232,7 @@
 \bool_if:nTF { \l_cr_smallcaps_bool } { \RequirePackage[T1]{fontenc} } { }
 
 % microtype
-\bool_if:nTF { \l_cr_microtype_bool } { \RequirePackage{microtype} } { }
+\bool_if:nTF { \l_cr_microtype_bool } { \RequirePackage[final, stretch=70]{microtype} } { }
 
 % inter
 \bool_if:nTF { \l_cr_inter_bool } {
@@ -467,7 +470,7 @@
 % contact info
 \let\email\undefined
 \NewDocumentCommand{\email}{m}{
-    \href{mailto:#1}{\texttt{#1}}
+    \small\href{mailto:#1}{\texttt{#1}}
 }
 
 \let\phone\undefined
