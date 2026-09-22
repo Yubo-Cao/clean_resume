@@ -1,0 +1,72 @@
+% Example resume for the clean-resume class. Everything below is fictional.
+\documentclass[primary=blue, margin=0.5in, linespace=1.25, element-gap=0.25em]{clean-resume}
+\usepackage{fontawesome}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+% A section heading that always ends its paragraph.
+\newcommand{\resumesection}[1]{\par\header{#1}\par\nobreak}
+
+\begin{document}
+
+\titleCenter{Alex Morgan \\[0.15\baselineskip]
+    \small\normalfont
+    \icon[1em]{envelope}\,\email{alex@example.com}\quad
+    \icon[1em]{phone}\,\phone{5550100000}\quad
+    \icon[1em]{map-marker}\,Springfield, USA\quad
+    \icon[1em]{globe}\,\url{www.example.com}%
+}[]
+\vspace{-0.9\baselineskip}
+\color{slate-700}
+
+\resumesection{Education}
+\education{ school = {Example University, B.S. Computer Science} }\hfill Expected May 2028 \textbullet\ GPA 3.9/4.0
+\\\emph{Coursework:} Algorithms (A), Probability (A), Operating Systems (A-), Machine Learning (A).
+\par
+
+\resumesection{Experience}
+
+\begin{experience}
+    {
+        duration = { \range{2025/6--now} },
+        title = { Software Engineering Intern },
+        organization = { Acme Robotics },
+        compact
+    }
+    \item Built a telemetry pipeline that ingests 2M events per day from the warehouse fleet; cut dashboard latency from 40 s to 3 s.
+    \item Wrote the retry and back-pressure layer for the task scheduler, removing a class of duplicate pick orders.
+\end{experience}
+
+\begin{experience}
+    {
+        duration = { \range{2024/9--2025/5} },
+        title = { Undergraduate Researcher },
+        organization = { Example University Vision Lab },
+        compact
+    }
+    \item Trained a lightweight segmentation model for crop imagery that matches the baseline's accuracy at one fifth of the parameters.
+\end{experience}
+
+\resumesection{Projects}
+
+\begin{experience}
+    {
+        duration = { \range{2024/1--2024/5} },
+        title = { Open-source maintainer },
+        organization = { tinykv },
+        compact
+    }
+    \item A key-value store in Rust with a write-ahead log and snapshotting; 300+ GitHub stars.
+\end{experience}
+
+\resumesection{Awards}
+\begin{lst}
+    \item \emph{Regional Hackathon:} 1st of 120 teams ('25); \emph{Math League:} Top 5\% nationally ('23)
+\end{lst}
+
+\resumesection{Skills}
+\begin{lst}
+    \item \emph{Languages:} Python, C++, Rust, TypeScript, SQL; \emph{Tools:} Docker, Kubernetes, Linux, Git
+\end{lst}
+
+\end{document}
